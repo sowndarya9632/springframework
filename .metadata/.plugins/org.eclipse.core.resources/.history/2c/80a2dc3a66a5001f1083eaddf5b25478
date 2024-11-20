@@ -1,0 +1,13 @@
+package com.constructorinjection;
+
+public class Employee {
+private String eName;
+private int eId;
+private double eSal;
+public Employee(String eName, int eId) {
+	this.eSal=eSal;
+	this.eName = eName;
+	this.eId = eId;
+}
+
+}

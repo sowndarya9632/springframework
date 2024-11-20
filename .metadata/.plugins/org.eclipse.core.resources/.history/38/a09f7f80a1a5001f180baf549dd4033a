@@ -1,0 +1,20 @@
+package com.annotation;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages="com.annotation")
+public class PizzaConfig {
+static List<String> a;
+public static void main(String[] args) {
+	a=new ArrayList();
+	a.add("pizza");
+	a.add("pp");
+    a.add("ss");
+	
+}
+}

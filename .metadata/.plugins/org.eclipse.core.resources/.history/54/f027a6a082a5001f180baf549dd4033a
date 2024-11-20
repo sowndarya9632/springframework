@@ -1,0 +1,16 @@
+package com.constructorinjection;
+
+public class Dept {
+String dName;
+
+public Dept(String dName) {
+	super();
+	this.dName = dName;
+}
+
+@Override
+public String toString() {
+	return "Dept [dName=" + dName + "]";
+}
+
+}

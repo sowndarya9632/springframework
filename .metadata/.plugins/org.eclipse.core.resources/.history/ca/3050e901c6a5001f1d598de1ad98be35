@@ -1,0 +1,15 @@
+package com.annotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class ConfigMainclass {
+
+    public static void main(String[] args) {
+        ApplicationContext context = new AnnotationConfigApplicationContext(PizzaConfig.class);
+        Pizza pizza = context.getBean("firstpizza", Pizza.class);
+        System.out.println(pizza);
+        pizza.delivery();
+        System.out.println("Project completed");
+    }
+}

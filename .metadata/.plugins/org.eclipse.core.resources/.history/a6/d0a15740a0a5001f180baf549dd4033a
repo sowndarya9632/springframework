@@ -1,0 +1,40 @@
+package com.annotation;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("firstpizza")
+
+public class Pizza {
+	@Value("pizza")
+private String pName;
+	@Value("100")
+private double pPrice;
+	@Value("#{T(com.annotation.Pizza).a}")
+	private String[] list;
+	
+void delivery() {
+	System.out.println("delivered");
+}
+public String getpName() {
+	return pName;
+}
+public void setpName(String pName) {
+	this.pName = pName;
+}
+public double getpPrice() {
+	return pPrice;
+}
+public void setpPrice(double pPrice) {
+	this.pPrice = pPrice;
+}
+@Override
+public String toString() {
+	return "Pizza [pName=" + pName + ", pPrice=" + pPrice + "]";
+}
+public Pizza() {
+	super();
+	// TODO Auto-generated constructor stub
+}
+
+}

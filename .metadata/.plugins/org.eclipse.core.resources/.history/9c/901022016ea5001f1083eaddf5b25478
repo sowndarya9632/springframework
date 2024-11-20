@@ -1,0 +1,18 @@
+package com.constructorinjection;
+
+public class Employee {
+private String eName;
+private int eId;
+private double eSal;
+public Employee(String eName, int eId,double eSal) {
+	this.eName=eName;
+	this.eId = eId;
+	this.eSal= eSal;
+}
+@Override
+public String toString() {
+	return "Employee [eName=" + eName + ", eId=" + eId + ", eSal=" + eSal + "]";
+}
+
+
+}

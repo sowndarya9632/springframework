@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-beans.context">
+	<!--  <bean class="com.constructorinjection.Employee" name="emp">
+	  	<constructor-arg>
+			<value>sow</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>1</value>
+		</constructor-arg>
+
+		<constructor-arg>
+			<value>30000.0</value>
+		</constructor-arg> -->
+		<bean  class="com.constructorinjection.Employee" name="emp" 
+		c:eName="sow" c:eSal="3000.0" c:eId="3"/>
+		</bean>
+</beans>
+                           
+                           

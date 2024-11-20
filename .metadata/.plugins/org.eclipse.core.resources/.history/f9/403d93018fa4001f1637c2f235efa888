@@ -1,0 +1,19 @@
+package com.bridgelabz.spring.springframeworkannotation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( " project execution started  ...!!!!!" );
+        ApplicationContext c=new ClassPathXmlApplicationContext("config.xml"); 
+        
+        
+        
+        System.out.println( " project execution completed  ...!!!!!" );
+    }
+}
